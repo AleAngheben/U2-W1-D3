@@ -41,12 +41,13 @@ nav .nav-button img {
 }
 
 .product-card {
-  width: 40%;
+  width: 45%;
   background-color: #fef7e2;
   border-radius: 70px;
   overflow: hidden;
   color: #792a0a;
   font-size: 15px;
+  margin-bottom: 1rem;
 }
 
 .product-card img {
@@ -85,4 +86,41 @@ p {
   margin-bottom: 1rem;
   padding: 0.5rem 2rem;
   border-radius: 30px;
+}
+
+article {
+  background-color: #fef7e2;
+  color: #792a0a;
+  padding: 2rem;
+  border-radius: 30px;
+}
+
+article .article-description {
+  margin-bottom: 2rem;
+}
+article h2 {
+  font-size: 35px;
+  margin-top: 0;
+}
+
+article p {
+  font-weight: bolder;
+}
+article img {
+  width: 100%;
+}
+
+#cards-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+main,
+#article-container {
+  margin-inline: 0.5rem;
+}
+
+main h1 {
+  font-size: 45px;
+  color: #792a0a;
 }
