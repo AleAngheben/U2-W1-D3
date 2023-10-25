@@ -124,7 +124,7 @@ main,
   margin-inline: 0.5rem;
 }
 
-main h1 {
+h1 {
   font-size: 45px;
   color: #792a0a;
 }
@@ -132,5 +132,67 @@ main h1 {
 @media screen and (min-width: 576px) {
   .product-card:nth-of-type(5) {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  body {
+    display: flex;
+    margin: 0.5rem;
+    margin-top: 0;
+    margin-left: 0;
+  }
+  nav {
+    flex-direction: column;
+    width: 25%;
+    min-height: 100vh;
+    border-radius: 0;
+  }
+  main {
+    display: flex;
+    width: 100%;
+
+    flex-wrap: wrap;
+  }
+
+  .product-card:nth-of-type(4) {
+    display: none;
+  }
+  .product-card {
+    width: 30%;
+    align-self: flex-end;
+  }
+  #page-content {
+    width: 75%;
+    display: flex wrap;
+    justify-content: space-around;
+    margin-inline: 1rem;
+  }
+  #cards-container {
+    justify-content: space-around;
+  }
+  article {
+    box-sizing: border-box;
+    width: 100%;
+    align-self: flex-end;
+  }
+  #article-container {
+    width: 100%;
+  }
+  .nav-button {
+    width: 200px;
+    padding: 3rem;
+    font-size: 14px;
+    border-radius: 50px;
+  }
+  .nav-button:nth-of-type(3) {
+    width: 200px;
+    padding: 3rem;
+    order: -2;
+    font-size: 25px;
+  }
+  nav .nav-button img {
+    height: 40px;
+    margin-right: 1rem;
   }
 }
